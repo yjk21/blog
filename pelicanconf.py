@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = u'themes/pelican-simplegrey'
+THEME = u'/home/ko/pelican-themes/tuxlite_tbs'
 
 AUTHOR = u'yjk21'
-SITENAME = u'Untitled'
+SITENAME = u'Learning Machine Learning'
 SITEURL = ''
 
 PATH = 'content'
@@ -35,7 +35,14 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
 MARKUP = ('md', 'ipynb')
 
 PLUGIN_PATHS = ['./plugins', './pelican-plugins']
 PLUGINS = ['ipynb.markup', 'render_math']
+
+INDEX_SAVE_AS = "blog_index.html"
+
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
+MENUITEMS = (("Home","/"), ("Blog","/blog_index.html"))
