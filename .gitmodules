@@ -4,3 +4,10 @@
 [submodule "pelican-plugins"]
 	path = pelican-plugins
 	url = https://github.com/getpelican/pelican-plugins.git
+[submodule "output"]
+	path = output
+	url = git@github.com:yjk21/yjk21.github.io
+    ignore = all
+[submodule "themes/pelican-simplegrey"]
+	path = themes/pelican-simplegrey
+	url = git@github.com:fle/pelican-simplegrey.git

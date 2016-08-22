@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = u'pelican-simplegrey'
+THEME = u'themes/pelican-simplegrey'
 
 AUTHOR = u'yjk21'
 SITENAME = u'Untitled'

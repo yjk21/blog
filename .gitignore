@@ -88,4 +88,4 @@ ENV/
 .ropeproject
 
 # Pelican
-output/
+#output/
