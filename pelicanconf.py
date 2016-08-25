@@ -46,3 +46,4 @@ INDEX_SAVE_AS = "blog_index.html"
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (("Home","/"), ("Blog","/blog_index.html"))
+IGNORE_FILES = ['.#*', '.ipynb_checkpoints']
