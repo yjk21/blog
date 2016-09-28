@@ -2,14 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-#THEME = u'/home/ko/pelican-themes/tuxlite_tbs'
-#THEME = u'/home/ko/pelican-themes/pelican-bootstrap3'
-#THEME = u'themes/pelican-themes/bootstrap'
 THEME = u'themes/pelican-themes/pelican-bootstrap3'
-#THEME = u'themes/pelican-themes/pelican-octopress-theme'
 
 AUTHOR = u'yjk21'
 SITENAME = u'Learning Machine Learning'
+SITEURL = 'http://yjk21.github.io'
 SITEURL = ''
 
 PATH = 'content'
@@ -43,15 +40,33 @@ DEFAULT_PAGINATION = 10
 MARKUP = ('md', 'ipynb')
 
 PLUGIN_PATHS = ['./plugins', './pelican-plugins']
-PLUGINS = ['ipynb.markup', 'render_math']
+PLUGINS = ['ipynb.markup', 'render_math','sitemap']
 
 
-INDEX_SAVE_AS = "blog_index.html"
+INDEX_SAVE_AS = "blog.html"
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
-MENUITEMS = (("Home","/"), ("Blog","/blog_index.html"))
+MENUITEMS = (("Home","/"), ("Blog","/blog.html"))
 
 IGNORE_FILES = ['.#*', '.ipynb_checkpoints']
 
 PYGMENTS_STYLE = "friendly"
+
+GOOGLE_ANALYTICS = "UA-83216470-1"
+
+SITEMAP = {
+        'format': 'xml',
+        'priorities': {
+            'articles': 0.5,
+            'indexes': 0.5,
+            'pages': 0.5
+            },
+        'changefreqs': {
+            'articles': 'monthly',
+            'indexes': 'daily',
+            'pages': 'monthly'
+            },
+        'exclude': ['tag/', 'category/']
+        }
+SUMMARY_MAX_LENGTH = 10

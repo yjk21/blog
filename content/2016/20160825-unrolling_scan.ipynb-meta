@@ -1,6 +1,6 @@
 Title: Unrolling Theano Scans for Fun and Profit
-Slug: theano
+Slug: unrolling
 Date: 2016/08/25
 Category: Programming
 Tags: Theano, Scan, Programming, Performance, Python, RNN 
-
+Summary: RNN-training in Theano using Backpropagation through Time (BPTT) can be greatly accelerated by unrolling Theano's built-in loop construct. The speedups were frankly a bit surprising. Therefore I decided to write a short tutorial on this.

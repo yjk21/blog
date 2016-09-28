@@ -1,5 +1,6 @@
-Title: 
+Title:  Welcome
 URL:
+slug: homepage
 save_as: index.html
 
-Thank you for visiting. Welcome!
+This is a site with random stuff.
