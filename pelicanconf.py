@@ -6,7 +6,6 @@ THEME = u'themes/pelican-themes/pelican-bootstrap3'
 
 AUTHOR = u'yjk21'
 SITENAME = u'Learning Machine Learning'
-SITEURL = 'http://yjk21.github.io'
 SITEURL = ''
 
 PATH = 'content'
@@ -47,7 +46,7 @@ INDEX_SAVE_AS = "blog.html"
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
-MENUITEMS = (("Home","/"), ("Blog","/blog.html"))
+MENUITEMS = (("Home","/"), ("Blog","/blog.html"), ("Projects", "/projects.html"), ("CV","https://github.com/yjk21/blog/raw/master/content/files/cv.pdf"))
 
 IGNORE_FILES = ['.#*', '.ipynb_checkpoints']
 
@@ -70,3 +69,4 @@ SITEMAP = {
         'exclude': ['tag/', 'category/']
         }
 SUMMARY_MAX_LENGTH = 10
+STATIC_PATHS=['js']
