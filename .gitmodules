@@ -8,6 +8,7 @@
 	path = output
 	url = git@github.com:yjk21/yjk21.github.io
     ignore = all
+	branch = master
 [submodule "themes/pelican-themes"]
 	path = themes/pelican-themes
 	url = git@github.com:getpelican/pelican-themes.git

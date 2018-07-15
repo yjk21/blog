@@ -3,6 +3,6 @@ URL:
 slug: homepage
 save_as: index.html
 
-I am a [PhD student](https://people.epfl.ch/youngjun.ko) at [EPFL](https://www.epfl.ch) in Switzerland.
+I completed my PhD at [EPFL](https://www.epfl.ch) and am currently working as a machine learning engineer at [1plusX](http://www.1plusx.com).
 
-On this blog I post random notes, mostly about topics in machine learning.
+This blog is a collection of random notes, mostly about topics in machine learning.
