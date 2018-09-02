@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = u'themes/pelican-themes/pelican-bootstrap3'
+THEME = u'../pelican-themes/pelican-bootstrap3'
 
 AUTHOR = u'yjk21'
 SITENAME = u'Learning Machine Learning'
@@ -31,6 +31,10 @@ AUTHOR_FEED_RSS = None
 #SOCIAL = (('You can add links in your config file', '#'),
 #          ('Another social link', '#'),)
 
+JINJA_ENVIRONMENT = {
+            'extensions': ['jinja2.ext.i18n'],
+        }
+
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -38,8 +42,8 @@ DEFAULT_PAGINATION = 10
 
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATHS = ['./plugins', './pelican-plugins']
-PLUGINS = ['ipynb.markup', 'render_math','sitemap']
+PLUGIN_PATHS = ['../', '../pelican-plugins']
+PLUGINS = ['pelican-ipynb.markup', 'render_math','sitemap', 'i18n_subsites']
 
 
 INDEX_SAVE_AS = "blog.html"
