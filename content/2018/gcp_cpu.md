@@ -23,3 +23,14 @@ Finally, to access JupyterLab, we need to establish an ssh tunnel with local por
     gcloud compute ssh $INSTANCE_NAME -- -L 8080:localhost:8080
 
 Using the gcloud cli as shown above also generates a new ssh-key pair if necessary.
+
+### Some More Setup Tasks
+
+    :::bash
+    # Enable Persistence Mode
+    nvidia-smi -pm 1
+    # Disable ECC
+    nvidia-smi -e 0
+    # Enable GPU Boost Clocks (K80 Specific)
+    nvidia-smi -ac 2505,875
+
