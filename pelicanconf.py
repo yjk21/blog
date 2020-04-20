@@ -42,7 +42,8 @@ DEFAULT_PAGINATION = 10
 
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATHS = ['../', '../pelican-plugins']
+#PLUGIN_PATHS = ['../', '../pelican-plugins']
+PLUGIN_PATHS = ['../', './pelican-plugins']
 PLUGINS = ['pelican-ipynb.markup', 'render_math','sitemap', 'i18n_subsites']
 
 
